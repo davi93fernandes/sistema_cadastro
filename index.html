@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div id="containerMain">
+       
+            <h1>Cadastre-se para acessar o sistema</h1>
+            <form class="formulario" id="register-form">
+
+                <div class="half-box spacing">
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+                </div>
+
+                <div class="half-box">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu Sobrenome">
+                </div>
+
+                <div class="full-box">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="half-box spacing">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="password" placeholder="Digite sua Senha">
+                </div>
+
+                <div class="half-box">
+                    <label for="confirmesenha">Confirmação Senha</label>
+                    <input type="password" name="confirmesenha" placeholder="Digite novamente sua senha">
+                </div>
+
+                <div class="full-box">
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">Li e aceito os <a href="">termos de uso</a></label>
+                </div>
+
+                <div class="full-box">
+                    <input type="submit" id="btn-refistrar" value="Registrar">
+                </div>
+
+
+            </form>
+            <div></div>
+       
+    </div>
+</body>
+
+</html>
