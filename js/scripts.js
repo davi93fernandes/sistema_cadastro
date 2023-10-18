@@ -49,6 +49,7 @@ class Validator {
         }, this);
 
     }
+    
     //vefica se um input tem um numero minimo de caracteres
     minlength(input, minValue) {
         const inputLength = input.value.length;
@@ -122,7 +123,7 @@ class Validator {
     }
 
     //Valida campo de senhas
-    /*passwordvalidate(input) {
+    passwordvalidate(input) {
         //Transforma string em Array
         let charArr = input.value.split("");
         
@@ -144,15 +145,15 @@ class Validator {
             
         }
         console.log(input.value)
-    }*/
+    }
 
     passwordvalidate(input) {
         const password = input.value;
 
-        // Check for at least one uppercase letter
+        // Verifiaca se há uma letra maiuscula
         const hasUppercase = /[A-Z]/.test(password);
 
-        // Check for at least one number
+        // verifica se há um número
         const hasNumber = /\d/.test(password);
 
         if (!hasUppercase || !hasNumber) {
@@ -162,21 +163,20 @@ class Validator {
     }
 
     //verifica aceite de termos de uso
-    boxcheck(input) {
+    /*checkbox(input) {
         
-       
+              
         let errorMessage = "Você deve aceitar os termos de uso.";
         
-        if (input.checked) {
-            // A caixa de seleção está marcada, não é necessário exibir mensagem de erro.
+        if (input = input.checked) {
+            alert("ok");
         } else {
-           alert(errorMessage)
+           alert(errorMessage);
             this.printMessage(input, errorMessage);
         }
        
-    }
-
-
+    }*/
+    
     //método para inserir mensagem na tela
     printMessage(input, mensagem) {
         // quantidade de erros
@@ -200,6 +200,7 @@ class Validator {
     cleanValidations(validations) {
         validations.forEach(el => el.remove());
     }
+    
 }
 
 let form = document.getElementById("register-form");
@@ -214,3 +215,4 @@ submit.addEventListener('click', function (e) {
     validator.validate(form);
 
 });
+
