@@ -19,7 +19,7 @@ label:focus {
 }
 
 a {
-    color:#620ce3;
+    color: #620ce3;
 }
 
 body {
@@ -52,26 +52,26 @@ body {
 
 }
 
-.full-box{
+.full-box {
     flex: 1 1 100%;
-    position:relative
+    position: relative
 }
 
-.half-box{
+.half-box {
     flex: 1 1 45%;
-    position:relative
+    position: relative
 }
 
-.spacing{
+.spacing {
     margin-right: 2.5%;
 }
 
-label{
+label {
     font-weight: bold;
     font-size: .8rem;
 }
 
-input{
+input {
     border-bottom: 2px solid #6bb986b7;
     padding: 10px;
     margin-bottom: 40px;
@@ -81,25 +81,26 @@ input{
 
 input:focus {
     border-color: #620ce3;
-    
+
 }
 
-.botaoRegistrar{
-background-color: #620ce3;
-border-radius: 20px;
-color: #ffff;
-border: none;
-height: 40px;
-cursor: pointer;
+.botaoRegistrar {
+    background-color: #620ce3;
+    border-radius: 20px;
+    color: #ffff;
+    border: none;
+    height: 40px;
+    cursor: pointer;
 }
 
-#checkAccept, #checkAccept-label{
+#agreement,
+#agreement-label {
     margin: 0;
-   
+    height: auto;
     display: inline;
     cursor: pointer;
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 }
 
 .error-validation {
@@ -107,8 +108,19 @@ cursor: pointer;
     position: absolute;
     top: 57px;
     font-size: .8rem;
-    }
+}
 
-.template{
+.template {
     display: none;
+}
+
+.msgAceite{
+    display:none;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: #ef1a1a;
+    position: absolute;
+    top: 22px;
+    font-size: .8rem;
+
 }
